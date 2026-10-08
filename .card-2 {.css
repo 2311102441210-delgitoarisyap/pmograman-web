@@ -1,0 +1,8 @@
+.card-2 {
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    padding: 30px;
+    border: 10px solid red;
+    margin: 15px;
+}
