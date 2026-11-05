@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Daftar Data Array</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f1f1;
+            color: #222;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .deskripsi {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        input {
+            flex: 1;
+            min-width: 0;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 12px 18px;
+            border: none;
+            border-radius: 6px;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            background: #f3f3f3;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
+        .hapus {
+            background: #333;
+        }
+
+        .jumlah {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .input-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Daftar Data Mahasiswa</h1>
+
+        <p class="deskripsi">
+            Aplikasi sederhana menggunakan JavaScript Array
+        </p>
+
+        <div class="input-group">
+            <input
+                type="text"
+                id="inputData"
+                placeholder="Masukkan nama mahasiswa"
+            >
+
+            <button onclick="tambahData()">
+                Tambah
+            </button>
+        </div>
+
+        <h3>Daftar Data:</h3>
+
+        <ul id="daftarData"></ul>
+
+        <p class="jumlah" id="jumlahData">
+            Jumlah data: 0
+        </p>
+
+    </div>
+
+    <script src="array tugas.js"></script>
+
+</body>
+</html>
